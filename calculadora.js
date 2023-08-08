@@ -21,23 +21,24 @@ const showMemory = document.getElementById('memory')
 
 
 let expresion = "0";
-let memory
+let memory = " ";
 res.textContent = expresion;
 
 function addNumber (n) {
     if(expresion == "0"){
         expresion =+ n;
+        let str = expresion.toString();
+        expresion = str;  
     }else{
         expresion += n;
     }
     memory = expresion;
-    // console.log(memory);
     res.textContent = expresion;
 }
 
 function addOperator (o) {
     let validarOperador = expresion.trim().slice( -1 );
-    console.log(validarOperador)
+    // console.log(validarOperador)
     if(validarOperador === "+" || validarOperador === "-" || validarOperador === "*" || validarOperador === "/"){
         expresion = memory
         expresion += " " + o + " ";
