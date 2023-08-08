@@ -1,0 +1,192 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(99, 99, 100);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.main{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.text{
+  font-size: 2.5rem;
+}
+
+.contenedor{
+  height: 369px;
+  width: 300px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    "memory memory memory memory"
+    "res res res res"
+    "ac ac div por"
+    "siete ocho nueve menos"
+    "cuatro cinco seis mas"
+    "uno dos tres igual"
+    "cero cero punto igual";
+}
+
+.memory{
+  grid-area: memory;
+  background-color: black;
+  padding-right: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.res{
+  grid-area: res;
+  background-color: black;
+  padding-right: 5px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+
+.ac{
+  grid-area: ac;
+  background-color: #E30051;
+  color: black;
+  height: 60px;
+  font-weight: 800;
+}
+
+.div{
+  grid-area: div;
+  background: #8B8B8B;
+  color: black;
+  font-weight: 800;
+}
+
+.por{
+  grid-area: por;
+  background: #8B8B8B;
+  color: black;
+  font-weight: 800;
+}
+
+.siete{
+  grid-area: siete;
+  background: #FFA600;
+  color: black;
+  font-weight: 800;
+}
+
+.ocho{
+  grid-area: ocho;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.nueve{
+  grid-area: nueve;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.menos{
+  grid-area: menos;
+  background: #8B8B8B;
+  height: 60px;
+  font-weight: 800;
+  color: black;
+}
+
+.cuatro{
+  grid-area: cuatro;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.cinco{
+  grid-area: cinco;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.seis{
+  grid-area: seis;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.mas{
+  grid-area: mas;
+  background: #8B8B8B;
+  height: 60px;
+  font-weight: 800;
+  color: black;
+}
+
+.uno{
+  grid-area: uno;
+  height: 60px;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.dos{
+  grid-area: dos;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.tres{
+  grid-area: tres;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.igual{
+  grid-area: igual;
+  background-color: #0083B6;
+  font-weight: 600;
+  color: black;
+}
+
+.cero{
+  grid-area: cero;
+  height: 60px;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+.punto{
+  grid-area: punto;
+  background: #FFA600;
+  font-weight: 600;
+  color: black;
+}
+
+
